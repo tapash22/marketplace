@@ -1,0 +1,84 @@
+<template>
+    <div class="home-create">
+        <v-container>
+            <v-row class="d-flex my-5">
+                <v-col cols="3" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25">
+
+                    <v-badge bottom color="transparent" offset-x="50" offset-y="50" v-for="list in lists" :key="list.id"
+                        class="my-5 mx-2">
+                        <template v-slot:badge>
+                            <v-avatar size="62">
+                                <v-img :src="list.image2"></v-img>
+                            </v-avatar>
+                        </template>
+                        <v-img :src="list.image1" width="250" height="200"></v-img>
+                    </v-badge>
+
+                </v-col>
+                <v-col cols="3" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25 mt-15">
+
+                    <v-badge bottom left color="transparent" offset-x="100" offset-y="20" 
+                        class="my-5 mx-2">
+                        <template v-slot:badge class="d-flex">
+                            <v-avatar size="30">
+                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
+                            </v-avatar>
+                            <v-avatar size="30">
+                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
+                            </v-avatar>
+                            <v-avatar size="30">
+                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
+                            </v-avatar>
+                            <v-avatar size="30">
+                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
+                            </v-avatar>
+                        </template>
+                        <v-img src="https://cdn.vuetifyjs.com/images/john.png"  width="250" height="250"></v-img>
+                    </v-badge>
+
+                </v-col>
+
+                <v-col cols="12" sm="12" lg="6" md="6" xl="6">
+                    <v-sheet class="d-block w-100">
+                        <h2 class="text-h4 font-weight-black text-uppercase my-5 mt-10">
+                            create and <br />sell your nfts
+                        </h2>
+                        <p class="text-body-1 text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia ipsa ipsam, accusamus quas
+                            minima placeat accusantium maiores reprehenderit aliquid, vel delectus. Illo fugiat
+                            doloribus unde qui repellendus a ratione?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia ipsa ipsam, accusamus quas
+                            minima placeat accusantium maiores
+                        </p>
+                        <v-btn color="blue" rounded class="my-5 white--text text-body-2" x-large>
+                            Explore Now
+                        </v-btn>
+                    </v-sheet>
+                </v-col>
+            </v-row>
+        </v-container>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'home-create',
+    data() {
+        return {
+            lists: [
+                {
+                    id: 1,
+                    image1: 'https://cdn.vuetifyjs.com/images/john.png',
+                    image2: 'https://picsum.photos/id/11/10/6'
+                },
+                {
+                    id: 2,
+                    image1: 'https://cdn.vuetifyjs.com/images/john.png',
+                    image2: 'https://picsum.photos/id/11/10/6'
+                },
+               
+            ]
+        }
+    }
+}
+</script>

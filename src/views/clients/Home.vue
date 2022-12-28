@@ -12,6 +12,12 @@
         <div class="home-featchers">
             <HomeFeatures />
         </div>
+        <div class="home-create">
+            <HomeCreate />
+        </div>
+        <div class="home-discover">
+            <HomeDiscover />
+        </div>
     </div>
 </template>
 
@@ -20,6 +26,8 @@ import HomeHeader from '@/components/HomeHeader.vue';
 import HomeTag from '@/components/HomeTag.vue';
 import HomeDetails from '@/components/HomeDetails.vue';
 import HomeFeatures from '@/components/HomeFeatures.vue';
+import HomeCreate from '@/components/HomeCreate.vue';
+import HomeDiscover from '@/components/HomeDiscover.vue';
 
 export default {
     name: 'home',
@@ -28,7 +36,9 @@ export default {
         HomeHeader,
         HomeTag,
         HomeDetails,
-        HomeFeatures
+        HomeFeatures,
+        HomeCreate,
+        HomeDiscover
     }
 
 }
