@@ -1,15 +1,15 @@
 <template>
     <div class="home">
-        <div class="home-header my-5">
+        <div class="home-header">
             <HomeHeader />
         </div>
-        <div class="home-tag my-5" >
+        <div class="home-tag " style="background:rgba(0,255,0,0.1); height:100%" >
             <HomeTag />
         </div>
         <div class="details">
             <HomeDetails />
         </div>
-        <div class="home-featchers">
+        <div class="home-featchers" style="background:rgba(0,255,0,0.1);">
             <HomeFeatures />
         </div>
         <div class="home-create">
@@ -47,6 +47,9 @@ export default {
 <style scoped>
 .home-tag{
     background: rgba(255,255,255,0.1);
-    height:200px;
+}
+div{
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 </style>

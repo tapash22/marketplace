@@ -2,7 +2,7 @@
     <div class="navigation">
         <v-app-bar elevate-on-scroll color="white">
             <!-- <v-app-bar-nav-icon /> -->
-            <v-app-bar-title class="text-h6 font-weight-bold text-uppercase mx-2">Neters</v-app-bar-title>
+            <v-app-bar-title class="text-h6 font-weight-bold text-uppercase mx-2">Nfters</v-app-bar-title>
           
             <v-list class="d-flex justify-space-evenly mx-5 ">
                 <v-list-item v-for="list in lists" :key="list.id"  class="">
@@ -12,13 +12,12 @@
             <v-spacer></v-spacer>
             <v-text-field class="mt-6" v-model="value"  append-icon="mdi-magnify" outlined rounded dense />
 
-            <v-btn class=" white--text mx-2" rounded color="red">
+            <v-btn class=" white--text mx-2" rounded color="#6100B8">
                 Upload
             </v-btn>
-            <v-btn rounded outlined class="">
+            <v-btn rounded outlined color="#6100B8">
                 connected
             </v-btn>
-
         </v-app-bar>
     </div>
 </template>

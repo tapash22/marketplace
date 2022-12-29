@@ -2,38 +2,28 @@
     <div class="home-create">
         <v-container>
             <v-row class="d-flex my-5">
-                <v-col cols="3" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25">
+                <v-col cols="6" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25">
 
                     <v-badge bottom color="transparent" offset-x="50" offset-y="50" v-for="list in lists" :key="list.id"
                         class="my-5 mx-2">
                         <template v-slot:badge>
                             <v-avatar size="62">
-                                <v-img :src="list.image2"></v-img>
+                                <v-img :src="list.image1"></v-img>
                             </v-avatar>
                         </template>
-                        <v-img :src="list.image1" width="250" height="200"></v-img>
+                        <v-img :src="list.image2" width="250" height="200"></v-img>
                     </v-badge>
 
                 </v-col>
-                <v-col cols="3" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25 mt-15">
-
-                    <v-badge bottom left color="transparent" offset-x="100" offset-y="20" 
+                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-block justify-space-between w-25 mt-15">
+                    <v-badge bottom color="transparent" offset-x="50" offset-y="50"
                         class="my-5 mx-2">
-                        <template v-slot:badge class="d-flex">
-                            <v-avatar size="30">
-                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
-                            </v-avatar>
-                            <v-avatar size="30">
-                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
-                            </v-avatar>
-                            <v-avatar size="30">
-                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
-                            </v-avatar>
-                            <v-avatar size="30">
-                                <v-img src="https://picsum.photos/id/11/10/6"></v-img>
+                        <template v-slot:badge>
+                            <v-avatar size="62">
+                                <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
                             </v-avatar>
                         </template>
-                        <v-img src="https://cdn.vuetifyjs.com/images/john.png"  width="250" height="250"></v-img>
+                        <v-img src="https://picsum.photos/id/11/10/6" width="250" height="200"></v-img>
                     </v-badge>
 
                 </v-col>
@@ -50,7 +40,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia ipsa ipsam, accusamus quas
                             minima placeat accusantium maiores
                         </p>
-                        <v-btn color="blue" rounded class="my-5 white--text text-body-2" x-large>
+                        <v-btn color="#6100B8" rounded class="my-5 white--text text-body-2" x-large>
                             Explore Now
                         </v-btn>
                     </v-sheet>

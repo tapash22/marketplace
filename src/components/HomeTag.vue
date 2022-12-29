@@ -1,13 +1,13 @@
 <template>
     <div class="home-tag">
-        <v-row class="green lighten-5">
+        <v-row class=" h-100">
             <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="w-100 d-flex justify-center">
                 <h2 class="text-h4 font-weight-black text-center text-uppercase mt-15">
                     The amazing nft art<br /> of the world here
                 </h2>
             </v-col>
 
-            <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="d-flex justify-space-evenly">
+            <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="d-flex justify-space-evenly pa-0">
                 <v-sheet class="d-flex bg-transparent mt-10 mx-5" color="transparent" width="250" v-for="list in lists" :key="list.id">
                     <v-icon size="lg" class="mx-1 mt-n16  text-h3" color="black">
                         mdi-{{ list.icon }}
