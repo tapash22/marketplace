@@ -4,6 +4,7 @@
             <h2 class="text-h5 font-weight-black text-left text-uppercase">
                 Discover more nfts
             </h2>
+            
             <v-row>
                 <v-col cols="12" sm="12" lg="10" md="10" xl="10" class="d-flex my-5 pa-2">
                     <v-chip class="mx-2 w-100" v-for="category in categorys" :key="category">
@@ -11,12 +12,11 @@
                     </v-chip>
                 </v-col>
                 <v-col cols="12" sm="12" md="2" lg="2" xl="2">
-                   
-                    <v-menu offset-y >
+
+                    <v-menu offset-y>
                         <template v-slot:activator="{ on, attrs }">
-                            <v-btn icon  v-bind="attrs" v-on="on"
-                                class="d-flex  black--text ml-smAndUp-5">
-                                <v-icon >
+                            <v-btn icon v-bind="attrs" v-on="on" class="d-flex  black--text ml-smAndUp-5">
+                                <v-icon>
                                     mdi-filter-variant
                                 </v-icon>
                                 all filters
@@ -33,7 +33,7 @@
 
             <v-row class="d-flex">
                 <v-col cols="12" sm="12" md="3" lg="3" xl="3" v-for="portfolio in portfolios" :key="portfolio.id">
-                  <SingleProfile :portfolio="portfolio" />
+                    <SingleProfile :portfolio="portfolio" />
                 </v-col>
             </v-row>
         </v-container>
@@ -48,7 +48,7 @@ export default {
     name: 'home-discover',
 
     data() {
-        return {         
+        return {
             items: [
                 { title: 'Click Me' },
                 { title: 'Click Me' },
@@ -58,14 +58,14 @@ export default {
         }
     },
 
-    computed:{
+    computed: {
         ...mapState({
-            portfolios:'portfolios',
+            portfolios: 'portfolios',
             categorys: 'categorys'
         })
     },
 
-    components:{
+    components: {
         SingleProfile,
     }
 }

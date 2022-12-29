@@ -43,7 +43,8 @@ export default new Vuex.Store({
           icon: 'cards-diamond',
           name: 'name',
           rating: 24.4,
-          count: '3,343'
+          count: '3,343',
+          icon1:'mdi-check-circle'
         },
         {
           id: 2,
@@ -59,7 +60,8 @@ export default new Vuex.Store({
           icon: 'cards-diamond',
           name: 'name',
           rating: 24.4,
-          count: '3,343'
+          count: '3,343',
+          icon1:'mdi-check-circle'
         },
         {
           id: 4,

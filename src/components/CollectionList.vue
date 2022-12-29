@@ -1,6 +1,6 @@
 <template>
     <div class="collection-list">
-        <v-card elevation="0">
+        <v-card elevation="0" color="transparent">
             <v-card-text>
                 <v-row class="d-flex justify-space-around">
                     <v-col cols="12" sm="12" md="8" lg="8" xl="8" class="d-block">
@@ -14,7 +14,7 @@
                 </v-row>
             </v-card-text>
             <v-card-text class="d-flex justify-center w-100">
-                <v-list class="d-block pa-0" width="500">
+                <v-list class="d-block pa-0" width="500" color="transparent">
                     <v-list-item-title class="my-2">{{ intro.title }}</v-list-item-title>
                     <v-list-item class="d-flex justify-space-between w-100">
 

@@ -2,10 +2,15 @@
     <div class="collection-list">
         <v-list class="d-flex">
             <v-list-item-title class="text-center pa-0"> {{ list.id }}</v-list-item-title>
-         
-            <v-avatar size="44" class="mx-2">
-                <v-img :src="list.image" />
-            </v-avatar>
+
+            <v-badge overlap v-if="list.icon1" :icon="list.icon1" offset-x="15" offset-y="20">
+                <v-avatar size="44">
+                    <v-img :src="list.image" />
+                </v-avatar>
+            </v-badge>
+            <v-avatar v-else size="44">
+                    <v-img :src="list.image" />
+                </v-avatar>
             <v-list-item class="d-block">
                 <v-list-item-title>{{ list.name }}</v-list-item-title>
                 <v-list-item-subtitle>
@@ -24,6 +29,6 @@
 <script>
 export default {
     name: 'home-details-collectionlis-list',
-    props:['list'],
+    props: ['list'],
 }
 </script>

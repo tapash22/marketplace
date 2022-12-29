@@ -71,10 +71,6 @@ export default {
         profiles(){
             return this.$store.state.profiles;
         }
-        // ...mapState({
-        //     lists: 'lists',
-        //     profiles:'profiles',
-        // })
     },
     components: {
         HomeDetailsCollectionList,
