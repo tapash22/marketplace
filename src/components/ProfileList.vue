@@ -23,7 +23,7 @@
                 </v-list-item-group>
 
                 <v-list-item-action>
-                    <v-btn outlined rounded color="#" >place a bid</v-btn>
+                    <v-btn  rounded color="#6100B8" @click="changeColor" :outlined="outline">place a bid</v-btn>
                 </v-list-item-action>
             </v-list-item>
 
@@ -37,20 +37,21 @@ export default {
     props: ['profiles'],
     data() {
         return {
-            isActive: true,
+            outline:true
         }
     },
     methods: {
         changeColor() {
-            this.isLoading = !this.isLoading;
+            this.outline = !this.outline;
+
         }
     }
 }
 </script>
 
 <style>
-.is-red {
-    background: red;
+.aa {
+    background: green !important;
 }
 
 .is-blue {

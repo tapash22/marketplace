@@ -1,15 +1,22 @@
 <template>
     <div class="collection-list">
-        <v-card elevation="0" color="transparent">
+        <v-card elevation="0" color="transparent" >
             <v-card-text>
                 <v-row class="d-flex justify-space-around">
-                    <v-col cols="12" sm="12" md="8" lg="8" xl="8" class="d-block">
-                        <v-img src="https://picsum.photos/id/11/10/6" class="rounded" height="100%" />
+                    <v-col cols="12" sm="12" md="8" lg="8" xl="8" class="d-block pa-0">
+                        <v-img src="https://picsum.photos/id/10/10/6" class="rounded" height="100%" />
                     </v-col>
-                    <v-col cols="12" sm="12" md="4" lg="4" xl="4" class="d-block h-100">
-                        <div v-for="img in intro.images" :key="img">
+                    <v-col cols="12" sm="12" md="4" lg="4" xl="4" class="d-block h-100 pa-0">
+                        <v-container>
+                            <v-row class="d-flex pa-0"  >
+                                <v-col cols="4" md="12" lg="12" sm="4" class="d-flex pa-2" v-for="img in intro.images" :key="img">
+                                    <v-img :src="img" class="rounded" />
+                                </v-col>
+                            </v-row>
+                        </v-container>
+                        <!-- <div class=" d-sm-and-down-flex">
                             <v-img :src="img" class="rounded my-2" />
-                        </div>
+                        </div> -->
                     </v-col>
                 </v-row>
             </v-card-text>

@@ -4,18 +4,27 @@
             <h2 class="text-h5 font-weight-black text-left text-uppercase">
                 Discover more nfts
             </h2>
-            
-            <v-row>
-                <v-col cols="12" sm="12" lg="10" md="10" xl="10" class="d-flex my-5 pa-2">
-                    <v-chip class="mx-2 w-100" v-for="category in categorys" :key="category">
-                        {{ category }}
-                    </v-chip>
-                </v-col>
-                <v-col cols="12" sm="12" md="2" lg="2" xl="2">
 
-                    <v-menu offset-y>
+            <v-row class="d-flex">
+                <v-col cols="12" sm="12" lg="10" md="10" xl="10" class="d-flex">
+                    <v-container>
+                        <v-row class="d-flex">
+                            <v-col v-for="category in categorys" :key="category" class="d-flex">
+                                <v-chip class="mx-2">
+                                    {{ category }}
+                                </v-chip>
+                            </v-col>
+                        </v-row>
+
+                    </v-container>
+
+
+                </v-col>
+                <v-col cols="12" sm="12" md="2" lg="2" xl="2" class="d-flex justify-center">
+
+                    <v-menu offset-y class="w-25">
                         <template v-slot:activator="{ on, attrs }">
-                            <v-btn icon v-bind="attrs" v-on="on" class="d-flex  black--text ml-smAndUp-5">
+                            <v-btn icon v-bind="attrs" v-on="on" class="d-flex  black--text ">
                                 <v-icon>
                                     mdi-filter-variant
                                 </v-icon>

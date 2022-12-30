@@ -14,7 +14,7 @@ export default new Vuex.Store({
           profile: 'https://cdn.vuetifyjs.com/images/john.png',
           rating: '2,333',
           text: '1 to 8',
-          icon: 'cards-diamond'
+          icon: 'cards-diamond',
         },
         {
           id: 2,
