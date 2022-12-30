@@ -3,7 +3,7 @@
         <div class="home-header">
             <HomeHeader />
         </div>
-        <div class="home-tag " style="background:rgba(0,255,0,0.1); height:100%" >
+        <div class="home-tag " style="background:rgba(0,255,0,0.1); height:100% padding:0;margin:0;" >
             <HomeTag />
         </div>
         <div class="details">
@@ -39,6 +39,9 @@ export default {
         HomeFeatures,
         HomeCreate,
         HomeDiscover
+    },
+    mounted(){
+        window.scrollTo(0,0);
     }
 
 }

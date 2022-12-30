@@ -16,15 +16,15 @@
 
 
                 </v-col>
-                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-flex justify-center pa-10">
+                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-flex justify-center">
                    
-                    <v-badge bottom color="transparent" offset-x="50" offset-y="50" class=" mx-5">
+                    <v-badge  color="transparent" offset-x="50" offset-y="180" class=" mx-5 mt-10 mt-sm-and-down-0">
                             <template v-slot:badge>
                                 <v-avatar size="62">
                                     <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
                                 </v-avatar>
                             </template>
-                            <v-img src="https://picsum.photos/id/11/10/6" width="250" height="200"></v-img>
+                            <v-img src="https://picsum.photos/id/11/10/6" width="250" height="200" ></v-img>
                         </v-badge>
 
                 </v-col>
@@ -34,7 +34,7 @@
                         <h2 class="text-h4 font-weight-black text-uppercase my-5 mt-10">
                             create and <br />sell your nfts
                         </h2>
-                        <p class="text-body-1 text-justify">
+                        <p class="text-body-1 text-justify pa-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia ipsa ipsam, accusamus quas
                             minima placeat accusantium maiores reprehenderit aliquid, vel delectus. Illo fugiat
                             doloribus unde qui repellendus a ratione?

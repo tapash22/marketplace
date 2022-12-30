@@ -10,7 +10,7 @@
                 </v-list-item>
             </v-list>
             <v-spacer></v-spacer>
-            <v-text-field class="mt-6 shrink max-width-6"  v-model="value"  append-icon="mdi-magnify" outlined rounded dense />
+            <v-text-field class="mt-6 shrink hidden-sm-and-down"  v-model="value"  append-icon="mdi-magnify" outlined rounded dense />
 
             <v-btn class=" white--text mx-2 hidden-sm-and-down" rounded color="#6100B8" >
                 Upload
@@ -19,7 +19,7 @@
                 connected
             </v-btn>
         </v-app-bar>
-        <v-navigation-drawer temporary app v-model="drawer" hide-overlay height="60%" >
+        <v-navigation-drawer temporary app v-model="drawer" hide-overlay height="50%" >
             <v-list class="d-block my-5 w-100 pa-0">
                 <v-list-item v-for="list in lists" :key="list.id"  class="d-flex justify-center" >
                     <v-list-item-title class="text-body-1 font-weight-bold text-center">{{ list.name }}</v-list-item-title>
@@ -31,6 +31,8 @@
             <v-btn rounded outlined color="#6100B8" class="offset-3 my-5">
                 connected
             </v-btn>
+            <v-text-field class="mt-6 mx-4"  v-model="value"  append-icon="mdi-magnify" outlined rounded dense />
+
         </v-navigation-drawer>
     </div>
 </template>

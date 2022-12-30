@@ -1,8 +1,10 @@
 <template>
     <div class="clients">
         <TheNavigation />
-
+        <div>
             <router-view />
+        </div>
+
 
     </div>
 </template>
@@ -11,8 +13,8 @@
 import TheNavigation from '@/components/TheNavigation.vue';
 
 export default {
-    name:'clients',
-    components:{
+    name: 'clients',
+    components: {
         TheNavigation
     }
 }

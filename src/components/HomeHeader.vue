@@ -7,7 +7,7 @@
                         <h2 class="text-h4 font-weight-black text-uppercase my-5">
                             Discover, and collect<br /> digital art nfts
                         </h2>
-                        <p class="text-body-1 text-justify">
+                        <p class="text-body-1 text-justify pa-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia ipsa ipsam, accusamus quas
                             minima placeat accusantium maiores reprehenderit aliquid, vel delectus. Illo fugiat
                             doloribus unde qui repellendus a ratione?
