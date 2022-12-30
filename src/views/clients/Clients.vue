@@ -1,7 +1,7 @@
 <template>
     <div class="clients">
         <TheNavigation />
-        <v-main>
+        <v-main >
             <router-view />
         </v-main>
     </div>
