@@ -1,9 +1,9 @@
 <template>
     <div class="clients">
         <TheNavigation />
-        <v-main >
+
             <router-view />
-        </v-main>
+
     </div>
 </template>
 

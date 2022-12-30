@@ -26,18 +26,6 @@
                 </v-col>
                 
                 <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="w-50">
-                    <!-- <v-sheet class="w-100 pa-2 d-flex my-5">
-                        <v-avatar  class="fixed my-auto">
-                            <v-img src="../assets/logo.png"/>
-                        </v-avatar>
-                        <div class="d-flex">
-                            <v-card>
-                                <v-img src="">
-
-                                </v-img>
-                            </v-card>
-                        </div>
-                    </v-sheet> -->
                     <div class="avatar">
                         <div class="avatarr">
                             <img src="https://cdn.vuetifyjs.com/images/john.png"  />
@@ -107,7 +95,7 @@ export default {
     height: 100px;
     border-radius: 50%;
     margin-top: 150px;
-    margin-left:150px;
+    margin-left:50px;
     z-index: 1;
 }
 .avatar .avatars {
@@ -117,7 +105,7 @@ export default {
     text-align: left;
     padding-left: 25px;
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 .avatar .avatars .avatar img {
     width: 300px;

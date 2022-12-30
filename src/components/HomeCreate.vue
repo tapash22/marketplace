@@ -1,30 +1,31 @@
 <template>
     <div class="home-create">
         <v-container>
-            <v-row class="d-flex my-5">
-                <v-col cols="6" sm="6" lg="3" md="3" xl="3" class="d-block justify-space-between w-25">
+            <v-row class="d-flex my-5 pa-0">
+                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-block ">
+                    <div v-for="list in lists" :key="list.id" style="display:flex;justify-content:center">
+                        <v-badge bottom color="transparent" offset-x="50" offset-y="50" class="my-5 mx-5">
+                            <template v-slot:badge>
+                                <v-avatar size="62">
+                                    <v-img :src="list.image1"></v-img>
+                                </v-avatar>
+                            </template>
+                            <v-img :src="list.image2" width="250" height="200"></v-img>
+                        </v-badge>
+                    </div>
 
-                    <v-badge bottom color="transparent" offset-x="50" offset-y="50" v-for="list in lists" :key="list.id"
-                        class="my-5 mx-2">
-                        <template v-slot:badge>
-                            <v-avatar size="62">
-                                <v-img :src="list.image1"></v-img>
-                            </v-avatar>
-                        </template>
-                        <v-img :src="list.image2" width="250" height="200"></v-img>
-                    </v-badge>
 
                 </v-col>
-                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-block justify-space-between w-25 mt-15">
-                    <v-badge bottom color="transparent" offset-x="50" offset-y="50"
-                        class="my-5 mx-2">
-                        <template v-slot:badge>
-                            <v-avatar size="62">
-                                <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
-                            </v-avatar>
-                        </template>
-                        <v-img src="https://picsum.photos/id/11/10/6" width="250" height="200"></v-img>
-                    </v-badge>
+                <v-col cols="12" sm="12" lg="3" md="3" xl="3" class="d-flex justify-center pa-10">
+                   
+                    <v-badge bottom color="transparent" offset-x="50" offset-y="50" class=" mx-5">
+                            <template v-slot:badge>
+                                <v-avatar size="62">
+                                    <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+                                </v-avatar>
+                            </template>
+                            <v-img src="https://picsum.photos/id/11/10/6" width="250" height="200"></v-img>
+                        </v-badge>
 
                 </v-col>
 
@@ -66,7 +67,7 @@ export default {
                     image1: 'https://cdn.vuetifyjs.com/images/john.png',
                     image2: 'https://picsum.photos/id/11/10/6'
                 },
-               
+
             ]
         }
     }
