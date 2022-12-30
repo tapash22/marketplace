@@ -22,6 +22,7 @@ export default {
     computed:{
         ...mapState({
             introduce:'introduce',
+            
         })
     },
 

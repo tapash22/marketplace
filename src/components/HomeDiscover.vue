@@ -9,16 +9,14 @@
                 <v-col cols="12" sm="12" lg="10" md="10" xl="10" class="d-flex">
                     <v-container>
                         <v-row class="d-flex">
-                            <v-col v-for="category in categorys" :key="category" class="d-flex">
-                                <v-chip class="mx-2">
+                            <v-col class="d-flex justify-start" v-for="category in categorys" :key="category">
+                                <v-chip     >
                                     {{ category }}
                                 </v-chip>
                             </v-col>
                         </v-row>
 
                     </v-container>
-
-
                 </v-col>
                 <v-col cols="12" sm="12" md="2" lg="2" xl="2" class="d-flex justify-center">
 

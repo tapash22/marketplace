@@ -16,7 +16,7 @@
                             Explore Now
                         </v-btn>
                         <v-list class=" d-flex" width="300">
-                            <v-list-item class="d-block pa-0" width="100" v-for="list in lists" :key="list.id">
+                            <v-list-item class="d-block pa-0" width="100" v-for="list in headerlists" :key="list.id">
                                 <v-list-item-title class="text-h4 font-weight-black">{{ list.numbers}}K+</v-list-item-title>
                                 <v-list-item-subtitle class="text-body-2 text-left mx-2">{{ list.name
                                     }}</v-list-item-subtitle>
@@ -51,28 +51,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
     name: 'home-header',
-    data() {
-        return {
-            lists: [
-                {
-                    id: 1,
-                    name: 'Artwork',
-                    numbers: 98,
-                },
-                {
-                    id: 2,
-                    name: 'Auction',
-                    numbers: 12,
-                },
-                {
-                    id: 3,
-                    name: 'Artist',
-                    numbers: 18,
-                },
-            ]
-        }
+    computed:{
+        ...mapState({
+            headerlists:'headerlists',
+        })
     }
 }
 </script>

@@ -7,9 +7,9 @@
                 </h2>
             </v-col>
 
-            <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="d-flex justify-space-evenly pa-2"  >
-                <v-sheet  width="280" class="d-flex bg-transparent mt-10 mx-2 pa-2" color="transparent"  v-for="list in lists" :key="list.id">
-                    <v-icon size="lg" class="mx-1 mt-n16  text-h3" color="black">
+            <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="d-flex justify-space-evenly "  >
+                <v-sheet  width="280" class="d-flex flex-column flex-md-row bg-transparent mx-2 pa-5 my-5" color="transparent"  v-for="list in lists" :key="list.id">
+                    <v-icon size="lg" class="mx-1   text-h3" color="black">
                         mdi-{{ list.icon }}
                     </v-icon>
                     <div class="d-block">

@@ -4,7 +4,7 @@
             <v-card-text>
                 <v-row class="d-flex justify-space-around">
                     <v-col cols="12" sm="12" md="8" lg="8" xl="8" class="d-block pa-0">
-                        <v-img src="https://picsum.photos/id/10/10/6" class="rounded" height="100%" />
+                        <v-img :src="intro.bg_image" class="rounded" height="100%" />
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="4" xl="4" class="d-block h-100 pa-0">
                         <v-container>
@@ -14,9 +14,6 @@
                                 </v-col>
                             </v-row>
                         </v-container>
-                        <!-- <div class=" d-sm-and-down-flex">
-                            <v-img :src="img" class="rounded my-2" />
-                        </div> -->
                     </v-col>
                 </v-row>
             </v-card-text>

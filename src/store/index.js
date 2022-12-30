@@ -6,6 +6,24 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state() {
     return {
+      headerlists: [
+        {
+          id: 1,
+          name: 'Artwork',
+          numbers: 98,
+        },
+        {
+          id: 2,
+          name: 'Auction',
+          numbers: 12,
+        },
+        {
+          id: 3,
+          name: 'Artist',
+          numbers: 18,
+        },
+      ],
+
       profiles: [
         {
           id: 1,
@@ -44,7 +62,7 @@ export default new Vuex.Store({
           name: 'name',
           rating: 24.4,
           count: '3,343',
-          icon1:'mdi-check-circle'
+          icon1: 'mdi-check-circle'
         },
         {
           id: 2,
@@ -61,7 +79,7 @@ export default new Vuex.Store({
           name: 'name',
           rating: 24.4,
           count: '3,343',
-          icon1:'mdi-check-circle'
+          icon1: 'mdi-check-circle'
         },
         {
           id: 4,
@@ -87,25 +105,28 @@ export default new Vuex.Store({
           id: 1,
           name: 'name',
           title: 'this is title',
-          profile_img: 'https://picsum.photos/id/11/10/6',
+          bg_image: 'https://picsum.photos/id/10/10/6',
+          profile_img: 'https://randomuser.me/api/portraits/women/85.jpg',
           text: 'total 54 items',
-          images: ['https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6']
+          images: ['https://picsum.photos/id/9/10/6', 'https://picsum.photos/id/8/10/6', 'https://picsum.photos/id/7/10/6']
         },
         {
           id: 2,
           name: 'name',
+          bg_image: 'https://picsum.photos/id/12/10/6',
           title: 'this is title',
-          profile_img: 'https://picsum.photos/id/11/10/6',
+          profile_img: 'https://randomuser.me/api/portraits/men/85.jpg',
           text: 'total 54 items',
-          images: ['https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6']
+          images: ['https://picsum.photos/id/6/10/6', 'https://picsum.photos/id/5/10/6', 'https://picsum.photos/id/4/10/6']
         },
         {
           id: 3,
           name: 'name',
+          bg_image: 'https://picsum.photos/id/11/10/6',
           title: 'this is title',
-          profile_img: 'https://picsum.photos/id/11/10/6',
+          profile_img: 'https://cdn.vuetifyjs.com/images/john.png',
           text: 'total 54 items',
-          images: ['https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6', 'https://picsum.photos/id/11/10/6']
+          images: ['https://picsum.photos/id/1/10/6', 'https://picsum.photos/id/2/10/6', 'https://picsum.photos/id/3/10/6']
         },
       ],
 
